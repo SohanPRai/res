@@ -1,3 +1,5 @@
+
+
 export default function Blog() {
   return (
     <div className="bg-white text-black dark:bg-stone-500 dark:text-white">
@@ -72,6 +74,7 @@ export default function Blog() {
         </div>
       </div>
       </div>
+      
     </div>
   );
 }

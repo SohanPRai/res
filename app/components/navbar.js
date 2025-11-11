@@ -13,19 +13,19 @@ export default function Navbar() {
 
                     <button onClick={()=>{
                         router.push("/");
-                    }} className=" hover:underline  hover:text-red-200">home</button>
+                    }} className=" hover:underline  hover:text-red-200">Home</button>
                     <button onClick={()=>{
                         router.push("/pages")
-                    }} className=" hover:underline  hover:text-red-200">page</button>
+                    }} className=" hover:underline  hover:text-red-200">Page</button>
                     <button onClick={()=>{
                         router.push("/menu")
-                    }} className=" hover:underline  hover:text-red-200">menu</button>
+                    }} className=" hover:underline  hover:text-red-200">Menu</button>
                     <button onClick={()=>{
                         router.push("/blog")
-                    }} className=" hover:underline  hover:text-red-200">blog</button>
+                    }} className=" hover:underline  hover:text-red-200">Blog</button>
                     <button onClick={()=>{
                         router.push("/shop")
-                    }} className=" hover:underline  hover:text-red-200">shop</button>
+                    }} className=" hover:underline  hover:text-red-200">Shop</button>
 
                 </div>
                 <div className="bg-amber-700 border-4 border-amber-500 m-10 mr-10  h-12 w-26  items-center justify-self-center mr-3 ml-3 hover:bg-amber-600 rounded-2xl">
