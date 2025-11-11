@@ -1,149 +1,283 @@
-'use client';
-
-import React, { useState } from 'react';
-import Contact from './contact/page.js';
-import Login from './login/page.js';
-import Menu from './menu/page.js';
-
-
-export default function MainPage() {
-  const [page, setPage] = useState('home'); 
-
-  
-  if (page === 'menu') return <Menu goBack={() => setPage('home')} />;
-  if (page === 'contact') return <Contact goBack={() => setPage('home')} />;
-  if (page === 'login') return <Login goBack={() => setPage('home')} />; 
-
+import Image from "next/image";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
+import Middle from "./components/middle";
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-400 dark:bg-gray-800 p-6 text-black dark:text-white">
+    <div className=" bg-white text-black dark:text-white dark:bg-black h-full w-full gap-5">
 
-      {/* ---------- HEADER ---------- */}
-      <header className="flex justify-between items-center bg-black dark:bg-gray-900 rounded-2xl px-6 py-4 text-white">
-        <h1 className="text-2xl font-bold">RESTANT</h1>
-        <nav className="flex gap-6 text-lg">
-          <button onClick={() => setPage('home')} className="hover:text-yellow-400">Home</button>
-          <button onClick={() => setPage('menu')} className="hover:text-yellow-400">Menu</button>
-          <button onClick={() => setPage('contact')} className="hover:text-yellow-400">Contact</button>
-          <button onClick={() => setPage('login')} className="hover:text-yellow-400">Login</button>
-        </nav>
-      </header>
+      <div>
+        <img src="https://i.pinimg.com/1200x/45/ea/2c/45ea2c14bcca0baa48a77f76d9f9641b.jpg"
+          className="w-[87%] justify-self-center items-center h-170 rounded-2xl">
 
-      {/* ---------- HERO SECTION ---------- */}
-      <div className="mt-6">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJNHSLnZ5dM3-KVrqB11sZiqDpPmOY56vE8A&s"
-          className="w-full h-64 object-cover rounded-2xl"
-          alt="Burger Banner"
-        />
+        </img>
+
       </div>
 
-      {/* ---------- TEXT SECTION ---------- */}
-      <div className="text-center my-10">
-        <h2 className="text-4xl md:text-5xl font-bold">
-          The best burgers offer a combination of tastes.
-        </h2>
-      </div>
+      <div className="justify-self-center pt-9 text-red-500 text-3xl items-center">------ABOUT US------
 
-      {/* ---------- GRID SECTION ---------- */}
-      <div className="grid md:grid-cols-3 gap-6 items-start">
-        <div className="flex flex-col space-y-4">
-          <div className="flex gap-4">
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F11.jpg&w=1200&q=75"
-              alt="Burger 1"
-              className="rounded-lg object-cover w-1/2 h-48"
-            />
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F10.jpg&w=1200&q=75"
-              alt="Burger 2"
-              className="rounded-lg object-cover w-1/2 h-48"
-            />
-          </div>
+      </div>
+      <div className="justify-self-center pt-9 font-extralight text-5xl items-center "> The best burgers offer a<br></br> combination of tastes.</div>
+      <div className="grid grid-cols-3 p-10 items-center justify-between">
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F11.jpg&w=1200&q=75"
+          className="h-100 w-90 rounded-3xl"></img>
+        <div className="gap-5">
+          <img src="https://i.pinimg.com/1200x/93/6b/cf/936bcf280316476438b628a498a65911.jpg"
+            className="h-40 w-70 rounded-3xl">
+          </img>
+          <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F10.jpg&w=1200&q=75"
+            className="h-60 pt-5 w-90 rounded-3xl">
+
+          </img>
         </div>
+        <div className="grid grid-rows-3 justify-center gap-4 items-center">
+          <h3>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating.</h3>
+          <div className="grid grid-cols-2 items-center  dark:bg-zinc-950 bg-sky-50 h-35 w-115">
+            <img src="https://i.pinimg.com/736x/db/c2/89/dbc289d397afb97c458dafcbec7e7ff2.jpg"
+              className="rounded-4xl   h-20 w-20 "></img>
+            <div className="grid grid-rows-2 justify-center ">
+              <div className="font-bold text-2xl justify-center pr-30 whitespace-nowrap ">Online Food Delivery
 
-        <div className="bg-red-600 rounded-lg flex flex-col items-center justify-center text-center p-10 text-white">
-          <h3 className="text-5xl font-bold mb-2">18+</h3>
-          <p className="text-lg font-semibold">Types Of Burger</p>
-        </div>
-
-        <div className="space-y-6">
-          <p>
-            Drawings can followed improved out sociable not. Earnestly so do instantly pretended.
-            See general few civilly amiable pleased account carried.
-          </p>
-
-          <div className="border-t border-gray-500 pt-6">
-            <h4 className="text-2xl font-semibold mb-2">Online Food Delivery</h4>
-            <p>Excellence projecting is devonshire dispatched remarkably on estimating.</p>
-          </div>
-        </div>
-      </div>
-
-      {/* ---------- POPULAR BURGERS ---------- */}
-      <div className="text-center my-16">
-        <h3 className="text-red-600 text-lg font-semibold mb-2 flex justify-center items-center gap-2">
-          <span className="w-12 h-[1px] bg-red-600"></span> OUR SPECIAL <span className="w-12 h-[1px] bg-red-600"></span>
-        </h3>
-        <h2 className="text-4xl md:text-5xl font-bold">Popular Burgers</h2>
-      </div>
-
-      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        {[
-          { name: 'Hamburger', img: 'https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4135.png', price: '$12' },
-          { name: 'Chicken Burger', img: 'https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96777.png', price: '$16' },
-          { name: 'Cheese Burger', img: 'https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96795.png', price: '$25' },
-          { name: 'Bacon Burger', img: 'https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96785.png', price: '$18' }
-        ].map((b, i) => (
-          <div key={i} className="bg-gray-700 rounded-2xl p-6">
-            <img src={b.img} alt={b.name} className="w-40 mx-auto" />
-            <h4 className="text-white font-bold mt-4 text-xl">{b.name}</h4>
-            <div className="flex justify-center items-center gap-3 mt-2">
-              <span className="bg-red-500 text-white px-2 py-1 rounded text-sm">{b.price}</span>
+              </div >
+              <div >Excellence projecting is devonshire<br></br> dispatched remarkably on estimating.</div>
             </div>
           </div>
-        ))}
-      </div>
+          <div className="grid grid-cols-2 items-center bg-sky-50 dark:bg-zinc-950 h-35 w-115">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F22.png&w=640&q=75"
+              className="rounded-4xl m-6  h-25 w-25  bg-black "></img>
+            <div className="grid grid-rows-2 justify-center ">
+              <div className="font-bold text-2xl justify-center pr-30 whitespace-nowrap ">Authentic food
 
-      {/* ---------- FOOTER ---------- */}
-      <footer className="bg-black text-gray-300 px-6 py-10 flex flex-wrap justify-around mt-20 rounded-2xl">
-        <div className="w-full sm:w-[45%] md:w-[22%] mb-8">
-          <h3 className="text-white font-semibold text-lg mb-3">About Us</h3>
-          <p className="text-sm mb-4">
-            Continued at zealously necessary is Surrounded sir motionless she end literature.
-          </p>
-          <div className="flex space-x-2">
-            {['Facebook', 'Twitter', 'YouTube', 'Instagram'].map((s, i) => (
-              <a key={i} href="#" className="bg-yellow-600 text-black px-2 py-1 text-xs rounded">{s}</a>
-            ))}
+              </div >
+              <div >Regularity projecting is devonshire<br></br> dispatched remarkably on estimating.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="w-screen h-200  bg-orange-50 dark:bg-neutral-900 ">
+        <div className="pt-10 text-red-500 text-2xl  justify-self-center ">----OUR SPECIAL----
+
+        </div>
+        <div className="pt-10 text-4xl font-extralight justify-self-center text-black dark:text-white "> POPULAR BURGER
+
+        </div>
+        <div className="grid grid-cols-4 justify-center pt-20 mx-5">
+          <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900 justify-center">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F9.png&w=1080&q=75"></img>
+            <div className="justify-self-center text-2xl font-bold">Hamburger
+
+            </div>
+            <div className="bg-white grid grid-cols-2 w-40 h-6 border rounded-2xl border-gray-400 justify-self-center">
+              <div>⭐⭐⭐⭐⭐</div>
+              <div className="bg-red-500 ml-10 rounded-r-2xl text-white">$12</div>
+            </div>
+            <div className="justify-self-center items-center">
+              <div>The hamburger is the</div>
+              <div>original and the best-known</div><div>burger to date</div>
+            </div>
+          </div>
+
+          <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F10.png&w=1080&q=75"></img>
+            <div className="justify-self-center text-2xl font-bold">Chicken Burger
+
+            </div>
+            <div className="bg-white grid grid-cols-2 w-40 h-6 border rounded-2xl border-gray-400 justify-self-center">
+              <div>⭐⭐⭐⭐⭐</div>
+              <div className="bg-red-500 ml-10 rounded-r-2xl text-white">$16</div>
+            </div>
+            <div className="justify-self-center items-center">
+              <div>The hamburger is the</div>
+              <div>original and the best-known</div><div>burger to date</div>
+            </div>
+          </div>
+          <div className="hover:bg-white dark:hover:bg-gray-900 h-130 w-90">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F11.png&w=1080&q=75"></img>
+            <div className="justify-self-center text-2xl font-bold">cheese Burger
+
+            </div>
+            <div className="bg-white grid grid-cols-2 w-40 h-6 border rounded-2xl border-gray-400 justify-self-center">
+              <div>⭐⭐⭐⭐⭐</div>
+              <div className="bg-red-500 ml-10 rounded-r-2xl text-white">$25</div>
+            </div>
+            <div className="justify-self-center items-center">
+              <div>The hamburger is the</div>
+              <div>original and the best-known</div><div>burger to date</div>
+            </div>
+          </div>
+          <div className="hover:bg-white  dark:hover:bg-gray-900 h-130 w-90">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F12.png&w=1080&q=75"></img>
+            <div className="justify-self-center text-2xl font-bold">Bacon Burger
+
+            </div>
+            <div className="bg-white grid grid-cols-2 w-40 h-6 border rounded-2xl border-gray-400 justify-self-center">
+              <div>⭐⭐⭐⭐⭐</div>
+              <div className="bg-red-500 ml-10 rounded-r-2xl text-white">$18</div>
+            </div>
+            <div className="justify-self-center items-center">
+              <div>The hamburger is the</div>
+              <div>original and the best-known</div><div>burger to date</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-2 justify-center items-center pt-20 gap-10 mx-20 pb-20">
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F1.jpg&w=1920&q=75 ">
+
+        </img>
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fdeal%2F2.jpg&w=1920&q=75">
+        </img>
+      </div>
+      <div className="w-screen h-200 justify-center  ">
+        <div className="text-red-500 text-2xl  justify-self-center ">
+          ----POPULAR MENU----
+        </div>
+        <div className="text-5xl font-semibold pt-4 justify-self-center">Latest Food Items
+
+        </div>
+        <div className="grid grid-cols-2 w-full gap-5 pt-10  ">
+          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F16.png&w=1080&q=75"
+              className="h-20 w-20 mx-20 "></img>
+            <div className="text-2xl font-bold">classic chicken
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+            </div>
+            <div className="text-2xl font-bold pr-">$35
+
+            </div>
+          </div>
+          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F13.png&w=1080&q=75"
+              className="h-20 w-20 mx-20 "></img>
+            <div className="text-2xl font-bold">Margherita Pizza
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+            </div>
+            <div className="text-2xl font-bold pr-">$29
+
+            </div>
           </div>
         </div>
 
-        <div className="w-full sm:w-[45%] md:w-[18%] mb-8">
-          <h3 className="text-white font-semibold text-lg mb-3">Explore</h3>
-          <ul className="space-y-1 text-sm">
-            <li>Company Profile</li>
-            <li>About</li>
-            <li>Help Center</li>
-            <li>Career</li>
-            <li>Features</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+        <div className="grid grid-cols-2 w-full gap-5 pt-10  ">
+          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F17.png&w=1080&q=75"
+              className="h-20 w-20 mx-20 "></img>
+            <div className="text-2xl font-bold">Cheese Burger
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+            </div>
+            <div className="text-2xl font-bold pr-">$42
 
-        <div className="w-full sm:w-[45%] md:w-[25%] mb-8">
-          <h3 className="text-white font-semibold text-lg mb-3">Contact Info</h3>
-          <p className="text-sm mb-1">Sahyadri College of Engineering</p>
-          <p className="text-sm mb-1">+91 9535656310</p>
-          <p className="text-sm mb-1">food@restan.com</p>
-        </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F14.png&w=1080&q=75"
+              className="h-20 w-20 mx-20 "></img>
+            <div className="text-2xl font-bold">Pepperoni Pizza
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+            </div>
+            <div className="text-2xl font-bold pr-">$29
 
-        <div className="w-full sm:w-[45%] md:w-[25%]">
-          <h3 className="text-white font-semibold text-lg mb-3">Newsletter</h3>
-          <p className="text-sm mb-3">
-            Join our subscribers list to get the latest news and special offers.
-          </p>
+            </div>
+          </div>
         </div>
-      </footer>
+        <div className="grid grid-cols-2 w-full gap-5 pt-10  ">
+          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F18.png&w=1080&q=75"
+              className="h-20 w-20 mx-20 "></img>
+            <div className="text-2xl font-bold">Grilled Chicken
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+            </div>
+            <div className="text-2xl font-bold pr-">$28
+
+            </div>
+          </div>
+          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F15.png&w=1080&q=75"
+              className="h-20 w-20 mx-20 "></img>
+            <div className="text-2xl font-bold">BBQ Chicken Pizza
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+            </div>
+            <div className="text-2xl font-bold pr-">$45
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="relative w-full h-160">
+        <img src="https://i.pinimg.com/736x/7c/72/ef/7c72ef4576673cdb86f67cbfd4f87728.jpg"
+          className="w-full h-160 "></img>
+        <div className="absolute inset-0 grid grid-cols-2 text-white">
+          <div>
+            <div className="justify-self-center pt-20 " >
+
+
+              <div className="text-4xl font-light">Super Combo Offer</div>
+              <div className="text-6xl font-light  pt-4"><div>BURGER AND</div>
+                <div>SEA FISH CURRY</div>
+                <div>COMBO</div></div>
+
+            </div><h3 className="px-30 pt-8">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</h3>
+            <button className="bg-red-500 rounded-3xl h-10 w-40 justify-self-center hover:bg-red-300 m-15 mx-35 whitespace-nowrap ">Accept This deal</button>
+          </div>
+          <div>
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F12.jpg&w=1920&q=75"
+              className="rounded-full h-70 w-70 justify-self-center mt-30 "></img>
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F13.png&w=1080&q=75"
+              className="rounded-full h-40 w-50 mb-60 ml-90"></img>
+          </div>
+
+        </div>
+      </div><div className="h-210 w-full"><div className="md:flex md:flex-row flex flex-col justify-center md:justify-center-none">
+        <iframe
+          className="md:h-100 h-120 md:rounded-3xl rounded-2xl ml-3 md:w-2xl w-100 md:mt-50 mt-28"
+          src="https://www.youtube.com/embed/F3zw1Gvn4Mk?si=dSRaWkM_P_7txhXQ"
+          title="YouTube video player"
+          allow="autoplay;picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <div className=" bg-white shadow-md md:w-xl w-100 md:h-150 h-160 rounded-4xl md:ml-11 ml-3 md:mt-35 mt-20">
+          <div className="flex flex-col">
+            <div className="text-3xl font-semibold text-indigo-950 ml-10 mt-18">
+              Opening Hours
+            </div>
+            <div className="text-amber-950 font-medium ml-10 mt-4">
+              <div>
+                A relaxing and pleasant atmosphere, good jazz, dinner, and{" "}
+              </div>
+              <div>cocktails. The Patio Time Bar opens in the center..</div>
+            </div>
+            <div className="md:text-xl text-lg text-black font-semibold ml-10 mt-9">
+              <div>Sunday To Tuesday ------- 9:00 am to 10:00 pm</div>
+              <div className="mt-3">
+                Wednesday To Thursday ----- 10:00 am to 9:00 pm
+              </div>
+              <div className="mt-3">
+                Friday To Saturday ------- 10:00 am to 12:00 pm
+              </div>
+            </div>
+            <div className="flex flex-row ">
+              <div className="bg-amber-900 w-24 h-24 rounded-full mt-11 ml-18">
+                <img
+                  src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=64&q=75"
+                  className="justify-self-center mt-4 "
+                ></img>
+              </div>
+              <div className="flex flex-col text-black mt-18 ml-5">
+                <div className="text-lg ">Call Any Time</div>
+                <div className="text-3xl font-semibold">+91 9483657402</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+
+<Middle/>
     </div>
   );
 }
