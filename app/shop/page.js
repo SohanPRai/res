@@ -13,7 +13,7 @@ export default function Shop() {
           <button>home</button> <button>Shop</button>
         </div>
       </div>
-              <div className="grid grid-cols-4 gap-3 justify-center pt-20 mx-5">
+              <div className="md:grid grid-cols-4 gap-3 justify-center pt-20 mx-5">
           <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900 justify-center">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Margherita Pizza
@@ -82,7 +82,7 @@ export default function Shop() {
             
           </div>
             </div>
-            <div className="grid grid-cols-4 gap-3 justify-center pt-20 mx-5">
+            <div className="md:grid grid-cols-4 gap-3 justify-center pt-20 mx-5">
           <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900 justify-center">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Vegetable Roll

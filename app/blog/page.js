@@ -16,8 +16,8 @@ export default function Blog() {
       </div>
       <div className=" text-black p-10">
         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75"
-          className="justify-self-center h-120 w-260 pt-10"></img>
-          <div className="h-60 w-260 bg-orange-50 justify-self-center">
+          className="justify-self-center h-100 md:h-120 w-260 pt-10"></img>
+          <div className="h-72 md:h-60 w-87 md:w-260 bg-orange-50 justify-self-center">
         <div className="flex flex-row text-sm text-black justify-self-center gap-6" >
           <div>12 August 2024        </div><div>John Baus</div>
         </div>
@@ -36,8 +36,8 @@ export default function Blog() {
       </div>
        <div className=" text-black p-10">
         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2-full.jpg&w=3840&q=75"
-          className="justify-self-center h-120 w-260 pt-10"></img>
-          <div className="h-60 w-260 bg-orange-50 justify-self-center">
+          className="justify-self-center  h-100 md:h-120 w-260 pt-10"></img>
+          <div className="h-72 md:h-60 w-87 md:w-260 bg-orange-50 justify-self-center">
         <div className="flex flex-row text-sm text-black justify-self-center gap-6" >
           <div>12 August 2025      </div><div>Admin</div>
         </div>
@@ -54,17 +54,17 @@ export default function Blog() {
         </div>
       </div>
       </div>
-       <div className=" text-black p-10">
+       <div className=" text-black p-10 mb-10 md:mb-0">
         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75"
-          className="justify-self-center h-120 w-260 pt-10"></img>
-          <div className="h-60 w-260 bg-orange-50 justify-self-center">
+          className="justify-self-center  h-100 md:h-120 w-260 pt-10"></img>
+          <div className="h-72 md:h-60 w-87 md:w-260 bg-orange-50 justify-self-center">
         <div className="flex flex-row text-sm text-black justify-self-center gap-6" >
           <div>12 August 2024        </div><div>John Baus</div>
         </div>
         <div className="text-4xl font-sans font-bold justify-self-center hover:text-yellow-800 mt-5">Overcame breeding point concerns has.
 
         </div>
-        <div className="text-sm font-medium p-4 text-yellow-800 ">Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
+        <div className="text-sm font-medium p-4 text-yellow-800 ">Bdulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
         </div>
         <div className="px-20">
