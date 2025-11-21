@@ -16,7 +16,7 @@ export default function Navbar() {
                     }} className=" hover:underline  hover:text-red-200">Home</button>
                     <button onClick={()=>{
                         router.push("/pages")
-                    }} className=" hover:underline  hover:text-red-200">page</button>
+                    }} className=" hover:underline  hover:text-red-200">Chef</button>
                     <button onClick={()=>{
                         router.push("/menu")
                     }} className=" hover:underline  hover:text-red-200">Menu</button>
