@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div className="md:grid grid-cols-4 justify-center pt-20 mx-5">
           <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900 justify-center">
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F11.png&w=1080&q=75"></img>
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F9.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Hamburger
 
             </div>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
           <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900">
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F11.png&w=1080&q=75"></img>
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F10.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Chicken Burger
 
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hover:bg-white  dark:hover:bg-gray-900 h-130 w-90">
-            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F11.png&w=1080&q=75"></img>
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F12.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Bacon Burger
 
             </div>
@@ -130,7 +130,7 @@ export default function Home() {
           className="md:h-150 md:w-150   md:ml-20">
         </img>
       </div>
-      <div className="w-screen h-350 md:h-200 justify-center  ">
+      <div className="w-screen h-full md:h-200 justify-center  ">
         <div className="text-red-500 text-2xl  justify-self-center ">
           ----POPULAR MENU----
         </div>
@@ -138,74 +138,74 @@ export default function Home() {
 
         </div>
         <div className="md:grid md:grid-cols-2 w-full gap-5 pt-10  ">
-          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+          <div className="md:grid md:grid-cols-3 pt-10 items-center justify-between">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F16.png&w=1080&q=75"
-              className="h-20 w-20 mx-20 "></img>
-            <div className="text-2xl font-bold">classic chicken
+              className="md:h-20 md:w-20 h-40 w-40 md:mx-20 justify-self-center"></img>
+            <div className="md:text-2xl text-4xl font-bold justify-self-center">classic chicken
               <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
               <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
             </div>
-            <div className="text-2xl font-bold pr-">$35
+            <div className=" justify-self-center text-2xl font-bold pr-">$35
 
             </div>
           </div>
-          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+          <div className="md:grid md:grid-cols-3 pt-10 items-center justify-between">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F13.png&w=1080&q=75"
-              className="h-20 w-20 mx-20 "></img>
-            <div className="text-2xl font-bold">Margherita Pizza
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              className="md:h-20 md:w-20 h-40 w-40 md:mx-20 justify-self-center "></img>
+            <div className="md:text-2xl text-4xl font-bold justify-self-center">Margherita Pizza
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
             </div>
-            <div className="text-2xl font-bold pr-">$29
+            <div className="text-2xl font-bold justify-self-center">$29
 
             </div>
           </div>
         </div>
 
         <div className="md:grid md:grid-cols-2 w-full gap-5 pt-10  ">
-          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+          <div className="md:grid md:grid-cols-3 pt-10 items-center justify-between">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F17.png&w=1080&q=75"
-              className="h-20 w-20 mx-20 "></img>
-            <div className="text-2xl font-bold">Cheese Burger
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              className="md:h-20 md:w-20 h-40 w-40 md:mx-20 justify-self-center"></img>
+            <div className="md:text-2xl text-4xl font-bold justify-self-center">Cheese Burger
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm hidden md:block justify-self-center">Ricotta / goat cheese / beetroot</div>
             </div>
-            <div className="text-2xl font-bold pr-">$42
+            <div className="text-2xl font-bold justify-self-center">$42
 
             </div>
           </div>
-          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+          <div className="md:grid md:grid-cols-3 pt-10 items-center justify-between">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F14.png&w=1080&q=75"
-              className="h-20 w-20 mx-20 "></img>
-            <div className="text-2xl font-bold">Pepperoni Pizza
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              className="md:h-20 md:w-20 h-40 w-40 md:mx-20 justify-self-center "></img>
+            <div className="md:text-2xl text-4xl font-bold justify-self-center">Pepperoni Pizza
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
             </div>
-            <div className="text-2xl font-bold pr-">$29
+            <div className="text-2xl font-bold justify-self-center">$29
 
             </div>
           </div>
         </div>
         <div className=" md:grid md:grid-cols-2 w-full gap-5 pt-10  ">
-          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+          <div className="md:grid md:grid-cols-3 pt-10 items-center justify-between">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F18.png&w=1080&q=75"
-              className="h-20 w-20 mx-20 "></img>
-            <div className="text-2xl font-bold">Grilled Chicken
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              className="md:h-20 md:w-20 h-40 w-40 md:mx-20 justify-self-center "></img>
+            <div className="md:text-2xl text-4xl font-bold justify-self-center">Grilled Chicken
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
             </div>
-            <div className="text-2xl font-bold pr-">$28
+            <div className="text-2xl font-bold justify-self-center">$28
 
             </div>
           </div>
-          <div className="grid grid-cols-3 pt-10 items-center justify-between">
+          <div className="md:grid md:grid-cols-3 pt-10 mb-20 items-center justify-between">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F15.png&w=1080&q=75"
-              className="h-20 w-20 mx-20 "></img>
-            <div className="text-2xl font-bold">BBQ Chicken Pizza
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
-              <div className="text-sm">Ricotta / goat cheese / beetroot</div>
+              className="md:h-20 md:w-20 h-40 w-40 md:mx-20 justify-self-center "></img>
+            <div className="md:text-2xl text-4xl font-bold justify-self-center">BBQ Chicken Pizza
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
+              <div className="text-sm hidden md:block">Ricotta / goat cheese / beetroot</div>
             </div>
-            <div className="text-2xl font-bold pr-">$45
+            <div className="text-2xl font-bold justify-self-center">$45
 
             </div>
           </div>
@@ -214,22 +214,22 @@ export default function Home() {
       <div className="relative w-full h-160">
         <img src="https://i.pinimg.com/736x/7c/72/ef/7c72ef4576673cdb86f67cbfd4f87728.jpg"
           className="w-full h-160 "></img>
-        <div className="absolute inset-0 grid grid-cols-2 text-white">
+        <div className="absolute inset-0 md:grid md:grid-cols-2 text-white">
           <div>
             <div className="justify-self-center pt-20 " >
 
 
-              <div className="text-4xl font-light">Super Combo Offer</div>
-              <div className="text-6xl font-light  pt-4"><div>BURGER AND</div>
+              <div className="ml-15 md:ml-0 text-2xl md:text-4xl font-light whitespace-nowrap">Super Combo Offer</div>
+              <div className="text-4xl ml-9 md:ml-0 md:text-6xl font-light  pt-4"><div>BURGER AND</div>
                 <div>SEA FISH CURRY</div>
                 <div>COMBO</div></div>
 
             </div><h3 className="px-30 pt-8 hidden md:block ">Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</h3>
-            <button className="bg-red-500 rounded-3xl h-10 w-40 justify-self-center hover:bg-red-300 m-15 mx-35 whitespace-nowrap ">Accept This deal</button>
+            <button className="bg-red-500 rounded-3xl h-10 w-40 justify-self-center hover:bg-red-300 md:m-15 m-5 md:mx-35 ml-30  whitespace-nowrap ">Accept This deal</button>
           </div>
           <div>
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F12.jpg&w=1920&q=75"
-              className="rounded-full h-70 w-70 justify-self-center mt-30 "></img>
+              className="rounded-full h-70 w-70 justify-self-center md:mt-30 "></img>
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F13.png&w=1080&q=75"
               className="rounded-full h-40 w-50 mb-60 ml-90 hidden md:block"></img>
           </div>
@@ -278,7 +278,7 @@ export default function Home() {
           </div>
         </div>
       </div></div>
-
+      <Middle />
 
     </div>
   );
