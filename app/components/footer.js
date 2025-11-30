@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
-        <div className="bg-black text-white  md:w-6xl w-screen justify-self-center hover:text-amber-50 h-120 md:h-90 dark:hover:text-blue-600 dark:bg-white dark:text-black">
-            <div className="grid grid-cols-4 justify-around text-xl md:text-3xl pt-10 font-bold">
+        <div className="bg-black text-white  md:w-6xl w-screen justify-self-center hover:text-amber-50 h-120 md:h-90 dark:hover:text-blue-600 dark:bg-white dark:text-black overflow-x-auto">
+            <div className="grid grid-cols-4 justify-around text-xl md:text-3xl pt-10 font-bold overflow-x-hidden">
                 <div className="justify-self-center">About Us
-                    <div className=" hidden md:block justify-self-center flex flex-col text-xs font-normal pt-10 gap-2.5">
+                    <div className=" hidden md:block justify-self-center  text-xs font-normal pt-10 gap-2.5">
 
                         <div>Continued at zealously<br></br>necessary is Surrounded<br></br> sir motionless she end <br></br>literature. Gay direction <br></br>neglected.</div>
                     </div>
