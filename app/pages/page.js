@@ -42,7 +42,7 @@ export default function Pages() {
             </div>
           </div>
         </div>
-         <div className="md:grid grid-cols-3 mt-30">
+        <div className="md:grid grid-cols-3 mt-30">
           <div className="relative  mt-14 md:mt-0">
             <img src="https://i.pinimg.com/736x/6b/f2/0f/6bf20f909f5b9df469a26d8a300d985e.jpg"
               className="rounded-full justify-self-center border-8 outline-2 outline-black border-white h-90 w-90 "></img>

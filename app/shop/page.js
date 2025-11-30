@@ -1,7 +1,7 @@
 "use client";
 export default function Shop() {
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white">
+    <div className="bg-white text-black dark:bg-black dark:text-white overflow-x-hidden ">
    <div className="relative  text-white">
         <img src="https://i.pinimg.com/1200x/70/83/0d/70830dba2119b6d55605efefe8e95e87.jpg"
           className="w-full h-100 "></img>
@@ -13,7 +13,7 @@ export default function Shop() {
           <button>home</button> <button>Shop</button>
         </div>
       </div>
-              <div className="md:grid grid-cols-4 gap-3 justify-center pt-20 mx-5">
+              <div className="grid md:grid-cols-4 gap-3 grid-cols-1 justify-center pt-20 mx-5 ">
           <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900 justify-center">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F1.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Margherita Pizza
@@ -82,7 +82,7 @@ export default function Shop() {
             
           </div>
             </div>
-            <div className="md:grid grid-cols-4 gap-3 justify-center pt-20 mx-5">
+            <div className="grid md:grid-cols-4 gap-3 justify-center pt-20 mx-5 grid-cols-1">
           <div className="hover:bg-white h-130 w-90 dark:hover:bg-gray-900 justify-center">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshop%2F8.png&w=1080&q=75"></img>
             <div className="justify-self-center text-2xl font-bold">Vegetable Roll

@@ -4,7 +4,7 @@ import Footer from "./components/footer";
 import Middle from "./components/middle";
 export default function Home() {
   return (
-    <div className=" bg-white text-black dark:text-white dark:bg-black h-full w-full gap-5">
+    <div className=" bg-white text-black dark:text-white dark:bg-black h-full w-full gap-5 overflow-x-auto">
 
       <div>
         <img src="https://i.pinimg.com/1200x/45/ea/2c/45ea2c14bcca0baa48a77f76d9f9641b.jpg"
